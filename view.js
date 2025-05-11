@@ -7,7 +7,7 @@ export function disableButton() {
 
 export function enableButton() {
   button.disabled = false;
-}
+} 
 
 export function clearView() {
   container.innerHTML = "";

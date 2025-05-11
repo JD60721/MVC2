@@ -8,7 +8,7 @@ export async function fetchQuote() {
     const response = await fetch(url, {
       mode: "cors",
       cache: "no-store",
-    });
+    }); 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }

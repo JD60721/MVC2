@@ -86,4 +86,4 @@ async function onConsultarClick() {
   }, 10000);
 }
 
-button.addEventListener("click", onConsultarClick);
+button.addEventListener("click", onConsultarClick);   
