@@ -1,4 +1,3 @@
-// view.js
 const container = document.getElementById("quote-container");
 const button = document.getElementById("get-quote");
 
@@ -15,10 +14,11 @@ export function clearView() {
   container.classList.remove("visible", "fade-out");
 }
 
-export function renderQuote({ quote, author }) {
+export function renderQuote({ quote, author, sign, emoji }) {
   container.innerHTML = `
     <p>"${quote}"</p>
     <p><em>- ${author}</em></p>
+    <p>${emoji} ${sign}</p>
   `;
   container.classList.remove("fade-out");
   container.classList.add("visible");
@@ -26,7 +26,7 @@ export function renderQuote({ quote, author }) {
 
 export function renderError() {
   container.textContent =
-    "Error al obtener el consejo. Mira la consola para detalles.";
+    "Error al obtener el horóscopo. Mira la consola para más detalles.";
   container.classList.add("visible");
 }
 
